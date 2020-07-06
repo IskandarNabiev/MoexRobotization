@@ -1,27 +1,27 @@
 
 # 1й способ
-# from random import random
-#
-# # 1000 случайных чисел
-# N = 1000
-# arr = [0] * N
-# for i in range(N):
-#     arr[i] = int(random() * 1000)
-# print(arr)
-#
-# def most_frequent(data):
-#     counter = 0
-#     num = data[0]
-#
-#     for i in data:
-#         curr_freq = data.count(i)
-#         if (curr_freq > counter):
-#             counter = curr_freq
-#             num = i
-#
-#     print("Наиболее встречающееся число: {}, встречается {} раз(а)".format(num, counter))
-#
-# most_frequent(arr)
+from random import random
+
+# 1000 случайных чисел
+N = 1000
+arr = [0] * N
+for i in range(N):
+    arr[i] = int(random() * 1000)
+print(arr)
+
+def most_frequent(data):
+    counter = 0
+    num = data[0]
+
+    for i in data:
+        curr_freq = data.count(i)
+        if (curr_freq > counter):
+            counter = curr_freq
+            num = i
+
+    print("Наиболее встречающееся число: {}, встречается {} раз(а)".format(num, counter))
+
+most_frequent(arr)
 
 
 # 2й способ
